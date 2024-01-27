@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethers.js Tutorial</title>
+    <!-- Import the ethers.js library -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <!-- Include MetaMask script -->
+    <script src="https://cdn.jsdelivr.net/npm/@metamask/detect-provider@1.2.0/dist/index.js"></script>
+    
+    <style>
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li button {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/play">Play</a></li>
+                <li><a href="/earn">Earn</a></li>
+                <!-- The button id is used for the JavaScript connection functionality -->
+                <li><button id="connectButton">Connect Wallet</button></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Ethers.js Cheat Sheet Tutorial</h1>
+    <p>Learn how to interact with the Ethereum blockchain using ethers.js and MetaMask.</p>
+
+
+
+    <!-- Dynamic content will be displayed here -->
+    <div id="content"></div>
+
+        <!-- Import the MetaMask connect script -->
+        <script src="./js/metamask_connect_script.js"></script>
+</body>
+</html>
